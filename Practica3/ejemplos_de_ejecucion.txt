@@ -1,0 +1,97 @@
+Nombre: Juan Jesús Carmona Tejero
+Usuario: i42catej
+
+
+
+************EJERCICIO 1************
+1)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio1.exe -n juan
+User name: juan
+User id: 1000
+Password: x
+Home: /home/juan
+Default shell: /bin/bash
+
+2)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio1.exe
+User name: juan
+User id: 1000
+Password: x
+Home: /home/juan
+Default shell: /bin/bash
+
+3)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio1.exe -s
+Nombre de usuario: juan
+Identificador de usuario: 1000
+Contraseña: x
+Carpeta de inicio: /home/juan
+Interprete por defecto: /bin/bash
+
+4)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio1.exe -n juan -eg
+User name: juan
+User id: 1000
+Password: x
+Home: /home/juan
+Default shell: /bin/bash
+Nombre del grupo:juan
+
+5)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio1.exe -es
+Error, se debe indicar un solo idioma
+
+
+************EJERCICIO 2************
+
+1)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio2.exe -g root
+Group Identifier: 0
+Group name: root
+
+2)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio2.exe --group root
+Group Identifier: 0
+Group name: root
+
+3)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio2.exe -e --group root
+Group Identifier: 0
+Group name: root
+
+4)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio2.exe -s --group root
+Identificador del grupo: 0
+Nombre del grupo: root
+
+5)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio2.exe --spanish
+Identificador del grupo: 1000
+Nombre del grupo: juan
+
+6)
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio2.exe --help
+-h, --help               Imprimir esta ayuda
+-g, --group=GRUPO        Grupo a analizar
+-e, --english		 Mensajes en ingles
+-s, --spanish		 Mensajes en castellano
+
+
+************EJERCICIO 3************
+
+juan@juan-X550DP:~/Escritorio/Practica3$ ./ejercicio3.exe 
+[PADRE]: Mi PID es 5090 y el PID de mi hijo es 5091
+[PADRE]: Escribimos el numero aleatorio 3680 en la tuberia...
+[PADRE]: Escribimos el numero aleatorio 4465 en la tuberia...
+[PADRE]: Escribimos el numero aleatorio 885 en la tuberia...
+[PADRE]: Escribimos el numero aleatorio 499 en la tuberia...
+[PADRE]: Escribimos el numero aleatorio 379 en la tuberia...
+[PADRE]: Tuberia cerrada.
+[HIJO]: Mi PID es 5091 y mi PPID es 5090
+[HIJO]: Leemos el numero aleatorio 3680 de la tuberia
+[HIJO]: Leemos el numero aleatorio 4465 de la tuberia
+[HIJO]: Leemos el numero aleatorio 885 de la tuberia
+[HIJO]: Leemos el numero aleatorio 499 de la tuberia
+[HIJO]: Leemos el numero aleatorio 379 de la tuberia
+[HIJO]: tuberia cerrada. Salgo...
+

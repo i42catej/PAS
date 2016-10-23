@@ -1,0 +1,3 @@
+Ejecución normal: Si ejecutamos sin el sleep(5) tanto el hijo como el padre se ejecutan a la vez, lo que hace que el padre escriba 5,4,3,2 o 1 veces en la tuberia mientras que el hijo lea 5,4,3,2 o 1 veces de la tuberia.
+
+Ejecución con sleep(5): Si ejecutamos con el sleep(5) si el padre escribe 1 vez, esa vez es leida por el hijo. Solo pudiendo escribir el padre una vez que el hijo haya leido su escritura.
